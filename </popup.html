@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NWWT Pocket Option</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <div class="app">
+
+    <header class="header">
+      <div class="brand">
+        <div class="brand-main">NWWT</div>
+        <div class="brand-sub">NO WORK WE TRADE</div>
+      </div>
+
+      <div id="connectionStatus" class="status offline">
+        OFFLINE
+      </div>
+    </header>
+
+    <section class="market-card">
+      <div class="label">MARKET</div>
+
+      <div id="marketName" class="market-name">
+        WAITING FOR POCKET OPTION
+      </div>
+
+      <div id="timeframe" class="timeframe">
+        1 MIN
+      </div>
+    </section>
+
+    <section class="controls">
+
+      <label for="timeframeSelect">
+        CANDLE TIMEFRAME
+      </label>
+
+      <select id="timeframeSelect">
+        <option value="60">1 Minute</option>
+        <option value="120">2 Minutes</option>
+        <option value="300">5 Minutes</option>
+        <option value="900">15 Minutes</option>
+      </select>
+
+      <label for="scoreSelect">
+        SIGNAL SCORE
+      </label>
+
+      <select id="scoreSelect">
+        <option value="2">2</option>
+        <option value="3" selected>3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+
+    </section>
+
+    <section class="buttons">
+
+      <button id="screenMarket" class="primary">
+        SCREEN MARKET
+      </button>
+
+      <button id="startBot" class="start">
+        START BOT
+      </button>
+
+      <button id="stopBot" class="stop">
+        STOP BOT
+      </button>
+
+    </section>
+
+    <section class="signal-card">
+
+      <div class="signal-top">
+        <span>LATEST SIGNAL</span>
+        <span id="signalTime">--</span>
+      </div>
+
+      <div id="signalDirection" class="signal-direction">
+        WAITING
+      </div>
+
+      <div id="signalReason" class="signal-reason">
+        Screen the market to begin
+      </div>
+
+      <div class="score-row">
+        <span>SCORE</span>
+        <strong id="signalScore">0</strong>
+      </div>
+
+    </section>
+
+    <section class="pattern-card">
+
+      <div class="section-title">
+        PATTERNS
+      </div>
+
+      <div id="patternList" class="patterns">
+        <span>Waiting for candles</span>
+      </div>
+
+    </section>
+
+    <footer>
+      NWWT SIGNAL ASSISTANT
+      <br>
+      ANALYSIS ONLY • NO AUTOMATIC ORDER PLACEMENT
+    </footer>
+
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
